@@ -11,3 +11,16 @@
 
 
 - Allowed ssh login for certain users("devops_user" & "guruprasad") in /etc/ssh/sshd_config.
+
+## Task-2 File & Directory Permissions
+
+- created the directory "devops_workspace" and a file "project_notes.txt".
+- set permissions Owner can edit, group can read, others have no access for both.
+- Verified permissions using ls -l
+  <img width="1416" height="91" alt="Screenshot 2026-01-08 222556" src="https://github.com/user-attachments/assets/e4032373-36a0-4161-866a-dba851d9d507" />
+
+## Task-3 Log File Analysis with AWK, Grep & Sed
+
+
+
+
