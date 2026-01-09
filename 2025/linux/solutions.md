@@ -21,6 +21,9 @@
 
 ## Task-3 Log File Analysis with AWK, Grep & Sed
 
+- used "grep" to find all the occurences of "authentication Failure" and printed only first 10 lines.
+  <img width="2304" height="887" alt="Screenshot 2026-01-09 100523" src="https://github.com/user-attachments/assets/1dafa152-4fb4-49b0-9beb-828a76b69c64" />
+
 
 
 
