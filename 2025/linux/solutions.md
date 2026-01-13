@@ -89,6 +89,11 @@
   <img width="1120" height="76" alt="Screenshot 2026-01-12 220726" src="https://github.com/user-attachments/assets/f3adc6b0-1cdb-48c1-aac4-0192007ecf69" />
 
 
+## Task-7: Finding the top 5 most common log messages in Linux_2k.log using awk and sort
+
+
+
+
 
 
 
