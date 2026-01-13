@@ -77,6 +77,18 @@
   <img width="1496" height="169" alt="Screenshot 2026-01-10 090635" src="https://github.com/user-attachments/assets/6026efea-c388-47b6-9d01-6bbd1bb5fcc2" />
 
 
+## Task-6: Automate Backups with Shell Scripting
+
+
+- Written a shell script to back up **/devops_workspace** as **backup_$(date +%F).tar.gz**
+
+- Saved it in **/backups** and scheduled it using cron.
+
+- Made the script display a success message in green text using echo -e.
+
+  <img width="1120" height="76" alt="Screenshot 2026-01-12 220726" src="https://github.com/user-attachments/assets/f3adc6b0-1cdb-48c1-aac4-0192007ecf69" />
+
+
 
 
 
