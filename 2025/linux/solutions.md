@@ -89,7 +89,27 @@
   <img width="1120" height="76" alt="Screenshot 2026-01-12 220726" src="https://github.com/user-attachments/assets/f3adc6b0-1cdb-48c1-aac4-0192007ecf69" />
 
 
-## Task-7: Finding the top 5 most common log messages in Linux_2k.log using awk and sort
+## Task-7: Finding the top 5 most common log messages in Linux_2k.log(app_2.log) using awk and sort
+
+   <img width="2300" height="288" alt="Screenshot 2026-01-14 212012" src="https://github.com/user-attachments/assets/ffe10e60-76d6-4f79-8877-077aba23ec8b" />
+
+## Task-8: Using "find" list all the files modified in the last 7 days
+
+   <img width="1344" height="431" alt="Screenshot 2026-01-14 212556" src="https://github.com/user-attachments/assets/8ff8fdc6-6637-4916-82cf-700ed506e144" />
+
+
+## Task-9: Writing a Shell Script to Extract only ERROR and WARNING logs from app_2.log
+
+- Shell script:
+
+  <img width="1260" height="350" alt="Screenshot 2026-01-14 221937" src="https://github.com/user-attachments/assets/2ad147be-848a-4622-b46e-0e51951a5970" />
+
+- Output:
+
+<img width="2148" height="396" alt="Screenshot 2026-01-14 215008" src="https://github.com/user-attachments/assets/eb8df99a-3d65-4352-b982-0a505d912a14" />
+
+
+
 
 
 
