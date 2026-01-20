@@ -41,5 +41,12 @@
 
 ### 1. Steps to Configure Remote URL with Your PAT:
 
+- using "git remote -v" command in the local repository i checked it is connected to any remote repository,it is blank which means it is not connected to any remote repository.
+
+- Copied my Remote github repository's HTTP URL which i want to connect and pasted it in the terminal as given below
+
+  - git remote add origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/shell-scripts.git
+
+- 
 
 
