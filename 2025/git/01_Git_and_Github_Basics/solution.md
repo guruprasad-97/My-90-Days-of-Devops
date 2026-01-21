@@ -45,8 +45,83 @@
 
 - Copied my Remote github repository's HTTP URL which i want to connect and pasted it in the terminal as given below
 
-  - git remote add origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/shell-scripts.git
+```bash
+# Replace <your-PAT> with actual values
+git remote add origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/shell-scripts.git
+git remote set-url origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/shell-scripts.git
+git push -u origin main
+```
 
-- 
+## Task 4: Explore Your Commit History
+
+   **check commit history**:
+
+   ```bash
+   git log
+   ```
+
+   Example output:
+
+   <img width="2181" height="257" alt="Screenshot 2026-01-21 082250" src="https://github.com/user-attachments/assets/5079bb1c-a66e-4df7-a543-53b138539a99" />
+
+
+## Task 5: Advanced Branching and Switching
+
+  1. ### Create a New Branch:
+
+     - created a New Branch called **"feature-update"** using the following command
+
+       ```bash
+       git branch feature-update
+       ```
+  2. ### Switch to the New Branch:
+
+     - we can Use the following command to switch to the new branch
+
+       ```bash
+       git switch feature-update
+       ```
+     - Alternate command
+
+       ```bash
+       git checkout feature-update
+       ```
+
+       **Output**
+
+       <img width="2305" height="260" alt="Screenshot 2026-01-21 090724" src="https://github.com/user-attachments/assets/7a0b0b4b-3b20-4260-89f5-43756dadf2f7" />
+
+   3. ### Modify the File and Commit Changes:
+
+      - Edited **info.txt**, added to the staging area and committed Using the following commands.
+
+        ```bash
+        echo "Adding more details to the file." >> info.txt
+        git add info.txt
+        git commit -m "Feature update: Added more content into info.txt"
+        git push origin feature-update
+        ```
+
+        **Output**:
+
+         <img width="2314" height="671" alt="Screenshot 2026-01-21 092725" src="https://github.com/user-attachments/assets/72c69dee-f5d7-467e-b816-e2e2a42e8d38" />
+
+         <img width="2301" height="630" alt="Screenshot 2026-01-21 094529" src="https://github.com/user-attachments/assets/a6c3ef70-0930-4db7-97a8-5507ff334a4c" />
+
+
+        
+
+       
+       
+
+
+
+
+
+
+
+
+
+
 
 
