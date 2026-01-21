@@ -47,8 +47,8 @@
 
 ```bash
 # Replace <your-PAT> with actual values
-git remote add origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/shell-scripts.git
-git remote set-url origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/shell-scripts.git
+git remote add origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/My-90-Days-of-Devops.git
+git remote set-url origin https://guruprasad-97:<my-PAT>@github.com/guruprasad-97/My-90-Days-of-Devops.git
 git push -u origin main
 ```
 
@@ -107,6 +107,19 @@ git push -u origin main
          <img width="2314" height="671" alt="Screenshot 2026-01-21 092725" src="https://github.com/user-attachments/assets/72c69dee-f5d7-467e-b816-e2e2a42e8d38" />
 
          <img width="2301" height="630" alt="Screenshot 2026-01-21 094529" src="https://github.com/user-attachments/assets/a6c3ef70-0930-4db7-97a8-5507ff334a4c" />
+
+
+       - while pushing changes from **feature-update** branch i encountered an issue,because of that i was not able to pull request on github,so i created another new branch called **feature-update-fixed** from main branch made changes in the info.txt and Merged **feature-update-fixed** branch to main via a Pull Request on GitHub.later i deleted the **feature-update-fixed** branch in local and also in remote.
+
+         <img width="2685" height="1134" alt="Screenshot 2026-01-21 220735" src="https://github.com/user-attachments/assets/edb307ff-67d9-4829-b4bb-a97085d8cf6a" />
+
+
+## Conclusion:
+
+Successfully completed Week 4 Challenge of #90DaysOfDevOps! This challenge deepened my understanding of Git workflows, remote configurations, authentication, and branching strategies.
+
+
+         
 
 
         
