@@ -3,3 +3,5 @@
 i am guruprasad m s currently working as a devops engineer in a startup.i have a good hands on knowledge in networking,linux,git and github.
 
 
+
+Favourite linux distro: Ubuntu
