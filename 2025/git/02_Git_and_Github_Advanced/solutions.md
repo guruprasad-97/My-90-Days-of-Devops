@@ -94,6 +94,75 @@ This document contains the solutions and explanations for the **Week 4: Git & Gi
 
    <img width="1570" height="1189" alt="Screenshot 2026-01-30 101051" src="https://github.com/user-attachments/assets/244b5773-07ca-4589-8856-daae9e430c63" />
 
+### **Differences Between `reset` and `revert`**
+
+| Feature  | `git reset` | `git revert` |
+|----------|------------|--------------|
+| Removes commit? | Yes (for `--hard`) | No |
+| Preserves history? | No | Yes |
+| Best for public branches? | No | Yes |
+
+**When to Use Each Method:**
+
+- Use `reset` when working on local commits before pushing.
+- Use `revert` when undoing changes in a shared branch.
+
+---
+
+## **Task 3: Stashing - Save Work Without Committing**
+
+### **Example Scenario**
+
+1. **Modify a File Without Committing**
+
+   ```bash
+   echo "Temporary Changes" >> temp.txt
+   git add .
+   ```
+
+2. **Stash the Changes**
+
+   ```bash
+   git stash
+   ```
+
+3. **Switch to Another Branch and Apply the Stash**
+
+   ```bash
+   git checkout main
+   git stash pop
+   ```
+
+**Hands on Practice**:
+
+<img width="1761" height="875" alt="Screenshot 2026-01-31 094819" src="https://github.com/user-attachments/assets/953df822-f433-4c7e-a9f7-a45c6f40f454" />
+
+### **When to use `git stash`**
+
+You use `git stash` when you want to temporarily save your uncommitted changes (both staged and unstaged) without committing them, so you can work on something else and come back later.
+
+### **Differences Between `git stash pop` and `git stash apply`**
+
+- `git stash pop`: Applies the stashed changes and removes them from the stash list.
+- `git stash apply`: Applies the stashed changes but keeps them in the stash list.
+
+---
+
+## **Task 4: Cherry-Picking - Selectively Apply Commits**
+
+### **Example Scenario**
+
+1. **Find the Commit to Cherry-Pick**
+
+   ```bash
+   git log --oneline
+   ```
+
+
+  
+
+
+
 
 
 
