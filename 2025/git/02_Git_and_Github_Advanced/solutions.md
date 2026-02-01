@@ -205,6 +205,7 @@ You use `git stash` when you want to temporarily save your uncommitted changes (
    - Fix conflicts manually
    - Remove conflict markers
 
+
    ```bash
    git add <filename>
    git rebase --continue
@@ -235,40 +236,45 @@ You use `git stash` when you want to temporarily save your uncommitted changes (
 
 ### **Common Git Workflows**
 
-1. **Git Flow**: Git Flow is a strict, role-based branching model designed for release-driven projects.
+### 1. Git Flow: 
 
-   **Core Branches(Always Exist)**
+Git Flow is a strict, role-based branching model designed for release-driven projects.
 
-   - **main(or master)**:
+**Core Branches(Always Exist)**
+
+**main(or master)**:
+     
      - Production ready code
      - Every commit here = release
      - Tagged with versions (v1.0, v1.1)
 
-   - **develop**:
+**develop**:
+     
      - Integration branch
      - contains latest completed features
      - source branch for all new work.
 
-   **Supporting branches(temporary)**
+**Supporting branches(temporary)**
 
-   **feature/***:Purpose of this branch is to create new features
-    - created from `develop`
-    - merged back into `develop`
-    - Naming: feature/login,feature/payment
+**feature/***: Purpose of this branch is to create new features
+    
+   - created from `develop`
+   - merged back into `develop`
+   - Naming: feature/login,feature/payment
 
-    **workflow**:
+   **workflow**:
 
       ```bash
       develop → feature/* → develop
       ```
 
-   **release/***:the purpose of this branch is to prepare a production release
+   **release/***: purpose of this branch is to prepare a production release
 
-    - created from `develop`
-    - merged into `develop` and `main`
-    - used for bug fixes,docs,version dump
+   - created from `develop`
+   - merged into `develop` and `main`
+   - used for bug fixes,docs,version dump
 
-    **workflow**:
+   **workflow**:
 
       ```bash
       develop → release/* → main + develop
@@ -276,49 +282,53 @@ You use `git stash` when you want to temporarily save your uncommitted changes (
 
    **hotfix/***: Purpose of this branch is emergency production fixes
 
-    - created from `main`
-    - merged into `main` and `develop`
-    - used when prod is broken
+   - created from `main`
+   - merged into `main` and `develop`
+   - used when prod is broken
 
-    **workflow**:
+   **workflow**:
 
       ```bash
       main → hotfix/* → main + develop
       ```
 
 
-2. **GitHub Flow**: GitHub Flow is a lightweight, continuous-delivery–friendly branching strategy.
+### 2. GitHub Flow: 
 
-   **Branches Structure**
+GitHub Flow is a lightweight, continuous-delivery–friendly branching strategy.
 
-   `main`:
+**Branches Structure**
+
+- **main**:
 
    - Always deployable
    - Reflects production-ready code
    - Protected branch (no direct commits)
 
-   `feature/*`:
+- **feature/***:
 
-    - Created from `main`
-    - used for features,bug fixes,experiments
-    - Deleted after merge
+   - Created from `main`
+   - used for features,bug fixes,experiments
+   - Deleted after merge
 
 
-3. **Trunk-Based Development**:In this all developers commit their code changes directly to a single shared branch (the “trunk” or “main”), keeping changes small, frequent, and continuously integrated.
+### 3. Trunk-Based Development:
 
-   **Branch Structure**
+In this all developers commit their code changes directly to a single shared branch (the “trunk” or “main”), keeping changes small, frequent, and continuously integrated.
 
-   **main**:
+**Branch Structure**
 
-    - Single source of truth
-    - Always deployable
-    - Protected with CI checks,code reviews
+**main**:
 
-    **Short-lived branches**(optional)
+   - Single source of truth
+   - Always deployable
+   - Protected with CI checks,code reviews
 
-    - Created from `main`
-    - Live for a few hours or 1 day
-    - Merged back immediately
+**Short-lived branches**(optional)
+
+   - Created from `main`
+   - Live for a few hours or 1 day
+   - Merged back immediately
 
 ---
 
@@ -336,6 +346,64 @@ git checkout feature-1
 - **GitHub Flow** works well for teams practicing continuous delivery.
 - **Git Flow** is useful for teams with planned release cycles.
 
+### Pros and cons of different workflows
+
+### 1. Git Flow
+
+Best for: Large projects, scheduled releases, traditional CI/CD
+
+**Pros**
+   
+   - Very structured & predictable – clear separation of main, develop, feature, release, and hotfix branches.
+   - Great for release management – easy to prepare, stabilize, and patch releases.
+   - Supports multiple versions in production via hotfix branches.
+   - Good for large teams where strict process is needed.
+
+**Cons**
+
+   - Complex to manage (many branches → more overhead)
+   - Slower delivery – not ideal for continuous deployment
+   - Frequent merge conflicts due to long-lived branches
+   - Overkill for small teams or startups
+
+### 2. GitHub Flow
+
+Best for: Web apps, SaaS products, continuous delivery
+
+**Pros**
+
+   - Simple and lightweight (usually just main + feature branches)
+   - Encourages frequent deployments
+   - Pull requests drive collaboration & code reviews
+   - Works very well with CI/CD pipelines
+
+**Cons**
+
+   - No built-in release branching (not ideal for versioned releases)
+   - Production must always be stable
+   - Less suitable for multiple active release versions
+   - Requires strong test automation to stay safe
+
+
+### 3. Trunk-Based Development (TBD)
+
+Best for: High-velocity teams, DevOps, microservices, elite engineering teams
+
+**Pros**
+
+   - Fastest delivery (commit directly or via very short-lived branches)
+   - Minimal merge conflicts
+   - Encourages continuous integration
+   - Excellent for CI/CD and DevOps maturity
+   - Feature flags allow safe incomplete code
+
+**Cons**
+
+   - Requires strong discipline
+   - Heavy reliance on automated testing
+   - Risky without feature flags
+   - Mistakes can impact everyone quickly
+
 ---
 
 ## **Final Submission Steps**
@@ -348,9 +416,9 @@ git checkout feature-1
    git push origin main
    ```
 
-2. **Create a Pull Request** with a detailed description.
+2. **Create a Pull Request** with a detailed description
 
-
+   
 ---
 
 ## **Conclusion**
